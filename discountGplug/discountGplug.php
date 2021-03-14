@@ -278,6 +278,7 @@ function discountGplug_Send2TG($data){
 }
 
 function discountGplug_arrayshort2String($arofsh){
+    
     if (!is_array($arofsh)){
         $arofsh = json_decode($arofsh);
     }
@@ -298,8 +299,9 @@ function discountGplug_arrayshort2String($arofsh){
                 $final .= " Email ";
                 break;  
         }
-    return $final;
+    
     }
+    return $final;
 }
 
 
